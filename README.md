@@ -10,7 +10,7 @@
 * Babel 7
 * ESLint 5
 
-## Install & Run Feathers App
+## Setup Feathers App
 
 Installation using [Feathers Plus Generator](https://generator.feathers-plus.com/get-started/)
 
