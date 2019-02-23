@@ -1,0 +1,17 @@
+run.config:
+  engine: nodejs
+  engine.config:
+    runtime: nodejs-10.4
+    dep_manager: yarn
+    python_version: python-2.7
+  extra_packages:
+    - nginx
+
+web.next:
+  start:
+    nginx: nginx -c /app/config/nginx.conf
+    next: yarn run start
+
+deploy.config:
+  transform:
+    - yarn run build
