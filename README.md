@@ -61,3 +61,12 @@ This will load the config from `config/env/production.json`.
 or using nanobox:
 
 `nanobox deploy {your-app-name}`
+
+
+### Additional suggestions
+
+RFX-Next is composed by the following directories: app, config, pages, shared.
+
+This structure has been designed to provide `config` and `shared` as git `submodules`.
+
+In this manner, some code and configs can be shared in different apps for a better microservices implementations.
