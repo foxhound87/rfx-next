@@ -34,6 +34,10 @@ Installation using [Feathers Plus Generator](https://generator.feathers-plus.com
 
 #### In Development:
 
+Create a `.env` file in the root with `ENV=development`.
+
+This will load the config from `config/env/development.json`.
+
 `npm run dev`
 
 > go to: `http://localhost:3000`
@@ -45,6 +49,10 @@ or using nanobox:
 > go to: `http://www.next.local:3000`
 
 #### In Production:
+
+Create a `.env` file in the root with `ENV=production`.
+
+This will load the config from `config/env/production.json`.
 
 `npm run build`
 
