@@ -2,7 +2,6 @@ import React from 'react';
 import { observer } from 'mobx-react';
 import { dispatch } from 'rfx-core';
 
-import cx from 'classnames';
 import $ from '@/shared/styles/mixins';
 
 import AuthFormLogin from '@/shared/components/form/AuthLogin';
@@ -34,17 +33,25 @@ const handleShowResetSection = () =>
 const SectionSwitch = observer(({ showSection }) => (
   <div className="cf dib pv5">
     <button
+      type="button"
       onClick={handleShowSigninSection}
-      className={$.buttonGroupLeft({
-        active: (showSection === 'signin')
+      className={$('buttonGroupLeft')({
+        resp: true,
+        active: (showSection === 'signin'),
       })}
-    >Login</button>
+    >
+      Login
+    </button>
     <button
+      type="button"
       onClick={handleShowSignupSection}
-      className={$.buttonGroupRight({
-        active: (showSection === 'signup')
+      className={$('buttonGroupRight')({
+        resp: true,
+        active: (showSection === 'signup'),
       })}
-    >Register</button>
+    >
+      Register
+    </button>
   </div>
 ));
 

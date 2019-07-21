@@ -1,8 +1,9 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { observer } from 'mobx-react';
 // import { dispatch } from 'rfx-core';
 
-import $ from '@/shared/styles/mixins';
 import MaterialToggle from '@/shared/components/form/inputs/MaterialToggle';
 
 const handleOpenTerms = () => alert('terms');
@@ -14,10 +15,13 @@ export default observer(({ field }) => (
         <MaterialToggle field={field} showError={false} label=" " />
       </div>
       <div className="di db-ns tl ma0 mt4 mb3">
-        I have read and accepted the <a
-          className={$.link}
+        I have read and accepted the
+        <a
+          className="link underline pointer blue hover-navy ml2"
           onClick={handleOpenTerms}
-        >Terms of Service</a>
+        >
+          Terms of Service
+        </a>
       </div>
     </div>
     <div>

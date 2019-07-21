@@ -18,7 +18,7 @@ export default class Index extends React.Component {
         <br />
         <h1>Test Page</h1>
         <button
-          className={$.button({})}
+          className={$('button')({ small: true })}
           onClick={() => Router.push('/')}
         >
           Go To Home Page

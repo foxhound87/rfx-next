@@ -10,12 +10,12 @@ const actions = ({
 }) => ([
 
   handlers.onCancel &&
-    <button type="button" className={$.button({}, 'mr2')} onClick={handlers.onCancel}>
+    <button type="button" className={$('button')({}, 'mr2')} onClick={handlers.onCancel}>
       {labels.cancel || 'Cancel'}
     </button>,
 
   handlers.onConfirm &&
-    <button type="button" className={$.button({})} onClick={handlers.onConfirm}>
+    <button type="button" className={$('button')({})} onClick={handlers.onConfirm}>
       {labels.confirm || 'Confirm'}
     </button>,
 

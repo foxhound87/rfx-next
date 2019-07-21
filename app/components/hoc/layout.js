@@ -6,7 +6,7 @@ import { MatchMediaProvider } from 'mobx-react-matchmedia';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import JssProvider from 'react-jss/lib/JssProvider';
-import Devtools from 'mobx-react-form-devtools';
+// import Devtools from 'mobx-react-form-devtools';
 import Snackbar from '@material-ui/core/Snackbar';
 
 import Head from '@/app/components/Head';
@@ -66,13 +66,13 @@ export const layout = Page =>
               {(store.ui.showSplashScreen) &&
                 <Splash styles="z-999 bg-near-white" />}
 
-              {notProduction &&
-                <Devtools.UI />}
+              {/* {notProduction &&
+                <Devtools.UI />} */}
 
               <Head />
-              <Header />
+              <Header check={store.auth.check} />
 
-              <div className="bg-white contain bg-center helvetica">
+              <div className="bg-white contain bg-center helvetica pt5">
                 <Page {...this.props} />
               </div>
 

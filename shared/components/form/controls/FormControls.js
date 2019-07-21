@@ -9,6 +9,7 @@ export default observer(({
   disabled = {},
   labels = {},
   controls = null,
+  medium = true,
   big = false,
   small = false,
   pill = true,
@@ -23,7 +24,7 @@ export default observer(({
             type="submit"
             onClick={form.onSubmit}
             disabled={disabled.submit || form.submitting}
-            className={$.button({ big, small, pill, disabled: disabled.submit })}
+            className={$('button')({ big, medium, small, pill, disabled: disabled.submit })}
           >
             <b><i className="fa fa-dot-circle-o" /> {labels.submit || 'Submit'} </b>
           </button>}
@@ -33,7 +34,7 @@ export default observer(({
           type="button"
           onClick={form.onClear}
           disabled={disabled.clear}
-          className={$.button({ big, small, pill, disabled: disabled.clear }, 'ml2')}
+          className={$('button')({ big, medium, small, pill, disabled: disabled.clear }, 'ml2')}
         >
           <i className="fa fa-eraser" /> {labels.clear || 'Clear'}
         </button>}
@@ -43,7 +44,7 @@ export default observer(({
           type="button"
           onClick={form.onReset}
           disabled={disabled.reset}
-          className={$.button({ big, small, pill, disabled: disabled.reset }, 'ml2')}
+          className={$('button')({ big, medium, small, pill, disabled: disabled.reset }, 'ml2')}
         >
           <i className="fa fa-refresh" /> {labels.reset || 'Reset'}
         </button>}
@@ -51,7 +52,7 @@ export default observer(({
     </div>
 
     {((!controls || controls.error) && form.hasError) &&
-      <div className={$.errorMessage}><i>{form.error}</i></div>}
+      <div className={$('globals').errorMessage}><i>{form.error}</i></div>}
 
   </div>
 ));

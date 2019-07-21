@@ -6,7 +6,6 @@ export default observer(({ field, label = null, showError = true }) => (
   <div>
     <br />
     <Toggle
-      labelPosition="right"
       label={label || field.label}
       id={field.id}
       name={field.name}
