@@ -63,7 +63,7 @@ or using nanobox:
 `nanobox deploy {your-app-name}`
 
 
-### Additional suggestions
+## Additional suggestions
 
 RFX-Next is composed by the following directories: app, config, pages, shared.
 
