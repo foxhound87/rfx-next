@@ -24,7 +24,7 @@
     "isomorphic-fetch": "^2.2.1",
     "js-cookie": "^2.2.0",
     "jss": "^9.8.7",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "mobx": "4.6.0",
     "mobx-react": "^5.3.6",
     "mobx-react-form": "^1.39.0",
