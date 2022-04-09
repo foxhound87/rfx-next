@@ -30,7 +30,7 @@
     "mobx-react-form": "^1.39.0",
     "mobx-react-form-devtools": "^1.11.0",
     "mobx-react-matchmedia": "^1.6.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "next": "^9.0.3",
     "next-cookies": "^1.1.2",
     "next-routes": "^1.4.2",
